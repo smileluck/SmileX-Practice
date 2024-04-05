@@ -1,4 +1,4 @@
-package top.zsmile.test.pat.classb;
+package top.zsmile.exam.pat.classb;
 
 import java.util.*;
 import java.util.stream.Collectors;

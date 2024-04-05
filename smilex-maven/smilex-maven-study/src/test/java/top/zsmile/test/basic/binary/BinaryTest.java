@@ -13,4 +13,11 @@ public class BinaryTest {
             System.out.print(t);
         }
     }
+    @Test
+    public void test2() {
+        int a = 1;
+        int b = a >> 32;
+        System.out.println("a: " + Integer.toBinaryString(a));
+        System.out.println("b: " + Integer.toBinaryString(b));
+    }
 }

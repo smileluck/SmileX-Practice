@@ -1,8 +1,8 @@
 package top.zsmile.test.demo;
 
-import com.google.common.collect.Lists;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -22,7 +22,7 @@ public class TestDemo {
    这里通过 CompletableFuture 进行并发操作
 */
 
-        List<Integer> list = Lists.newArrayList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
         List<Integer> list2 = new CopyOnWriteArrayList();
 
         CompletableFuture[] completableFutures = list.stream().map(e -> CompletableFuture.runAsync(() -> {
@@ -48,7 +48,7 @@ public class TestDemo {
     @Test
     public void test2() {
         String s = Integer.toHexString(-85);
-        String substring = s.substring(s.length()-4);
+        String substring = s.substring(s.length() - 4);
         System.out.println(substring);
     }
 
